@@ -1,0 +1,45 @@
+{
+  "name": "mixed_cons",
+  "model": "outputs/v2/mixed_cons.keras",
+  "root": "frames_faces",
+  "test_variant": "c23",
+  "threshold_variant": "c23",
+  "threshold": 0.3446199181780685,
+  "n_test_videos": 60,
+  "aggregation": "mean frame probability per video",
+  "ci_method": "percentile bootstrap over test videos, 1000 resamples, seed 42, 95%",
+  "test": {
+    "accuracy": 0.9,
+    "roc_auc": 0.9422222222222222,
+    "precision_fake": 0.8529411764705882,
+    "recall_fake": 0.9666666666666667,
+    "f1_fake": 0.90625,
+    "recall_real": 0.8333333333333334,
+    "tn": 25,
+    "fp": 5,
+    "fn": 1,
+    "tp": 29
+  },
+  "ci95": {
+    "accuracy": [
+      0.8166666666666667,
+      0.9666666666666667
+    ],
+    "roc_auc": [
+      0.8766968325791856,
+      0.9944163860830526
+    ],
+    "precision_fake": [
+      0.7199687499999999,
+      0.9705882352941176
+    ],
+    "recall_fake": [
+      0.8888888888888888,
+      1.0
+    ],
+    "f1_fake": [
+      0.8147834274952919,
+      0.9722222222222222
+    ]
+  }
+}

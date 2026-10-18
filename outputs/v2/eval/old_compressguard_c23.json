@@ -1,0 +1,45 @@
+{
+  "name": "old_compressguard",
+  "model": "results_compressguard/compressguard_best.keras",
+  "root": "frames_compressed",
+  "test_variant": "c23",
+  "threshold_variant": "c23",
+  "threshold": 0.47250879742205143,
+  "n_test_videos": 60,
+  "aggregation": "mean frame probability per video",
+  "ci_method": "percentile bootstrap over test videos, 1000 resamples, seed 42, 95%",
+  "test": {
+    "accuracy": 0.6,
+    "roc_auc": 0.6422222222222222,
+    "precision_fake": 0.6,
+    "recall_fake": 0.6,
+    "f1_fake": 0.6,
+    "recall_real": 0.6,
+    "tn": 18,
+    "fp": 12,
+    "fn": 12,
+    "tp": 18
+  },
+  "ci95": {
+    "accuracy": [
+      0.48333333333333334,
+      0.7166666666666667
+    ],
+    "roc_auc": [
+      0.49833033529318294,
+      0.7753523809523809
+    ],
+    "precision_fake": [
+      0.4284340659340659,
+      0.771461038961039
+    ],
+    "recall_fake": [
+      0.4165948275862069,
+      0.7742831541218637
+    ],
+    "f1_fake": [
+      0.43623885918003563,
+      0.7323943661971831
+    ]
+  }
+}

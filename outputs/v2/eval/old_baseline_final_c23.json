@@ -1,0 +1,45 @@
+{
+  "name": "old_baseline_final",
+  "model": "results/xception_baseline_final.keras",
+  "root": "frames_compressed",
+  "test_variant": "c23",
+  "threshold_variant": "c23",
+  "threshold": 9.725193919507547e-06,
+  "n_test_videos": 60,
+  "aggregation": "mean frame probability per video",
+  "ci_method": "percentile bootstrap over test videos, 1000 resamples, seed 42, 95%",
+  "test": {
+    "accuracy": 0.48333333333333334,
+    "roc_auc": 0.4977777777777777,
+    "precision_fake": 0.4864864864864865,
+    "recall_fake": 0.6,
+    "f1_fake": 0.5373134328358209,
+    "recall_real": 0.36666666666666664,
+    "tn": 11,
+    "fp": 19,
+    "fn": 12,
+    "tp": 18
+  },
+  "ci95": {
+    "accuracy": [
+      0.35,
+      0.6
+    ],
+    "roc_auc": [
+      0.3568804676226552,
+      0.6462784126021056
+    ],
+    "precision_fake": [
+      0.32241086587436335,
+      0.6388888888888888
+    ],
+    "recall_fake": [
+      0.4192157953281424,
+      0.7778645833333333
+    ],
+    "f1_fake": [
+      0.3703418803418803,
+      0.6668749999999998
+    ]
+  }
+}

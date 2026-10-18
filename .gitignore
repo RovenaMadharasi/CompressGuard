@@ -1,0 +1,12 @@
+dataset/
+data/
+data_compressed/
+frames/
+frames_compressed/
+frames_faces/
+results/
+results_compressguard/
+outputs/v2/predict_tmp/
+*.log
+__pycache__/
+.venv/

@@ -1,0 +1,45 @@
+{
+  "name": "2b_c23",
+  "model": "outputs/v2/2b_c23_finetune.keras",
+  "root": "frames_faces",
+  "test_variant": "c40",
+  "threshold_variant": "c40",
+  "threshold": 0.5438218372873962,
+  "n_test_videos": 60,
+  "aggregation": "mean frame probability per video",
+  "ci_method": "percentile bootstrap over test videos, 1000 resamples, seed 42, 95%",
+  "test": {
+    "accuracy": 0.85,
+    "roc_auc": 0.9122222222222223,
+    "precision_fake": 0.92,
+    "recall_fake": 0.7666666666666667,
+    "f1_fake": 0.8363636363636363,
+    "recall_real": 0.9333333333333333,
+    "tn": 28,
+    "fp": 2,
+    "fn": 7,
+    "tp": 23
+  },
+  "ci95": {
+    "accuracy": [
+      0.7666666666666667,
+      0.9333333333333333
+    ],
+    "roc_auc": [
+      0.8350036826599326,
+      0.9739927533861152
+    ],
+    "precision_fake": [
+      0.7997916666666667,
+      1.0
+    ],
+    "recall_fake": [
+      0.6206896551724138,
+      0.9090909090909091
+    ],
+    "f1_fake": [
+      0.72,
+      0.9285714285714286
+    ]
+  }
+}

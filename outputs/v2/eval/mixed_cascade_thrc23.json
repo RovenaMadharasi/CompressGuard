@@ -1,0 +1,45 @@
+{
+  "name": "mixed",
+  "model": "outputs/v2/mixed.keras",
+  "root": "frames_faces",
+  "test_variant": "cascade",
+  "threshold_variant": "c23",
+  "threshold": 0.3742432149592787,
+  "n_test_videos": 60,
+  "aggregation": "mean frame probability per video",
+  "ci_method": "percentile bootstrap over test videos, 1000 resamples, seed 42, 95%",
+  "test": {
+    "accuracy": 0.7833333333333333,
+    "roc_auc": 0.9022222222222221,
+    "precision_fake": 0.7297297297297297,
+    "recall_fake": 0.9,
+    "f1_fake": 0.8059701492537313,
+    "recall_real": 0.6666666666666666,
+    "tn": 20,
+    "fp": 10,
+    "fn": 3,
+    "tp": 27
+  },
+  "ci95": {
+    "accuracy": [
+      0.6833333333333333,
+      0.8833333333333333
+    ],
+    "roc_auc": [
+      0.8190150624933235,
+      0.962962962962963
+    ],
+    "precision_fake": [
+      0.5806451612903226,
+      0.875
+    ],
+    "recall_fake": [
+      0.7856366459627329,
+      1.0
+    ],
+    "f1_fake": [
+      0.6885245901639344,
+      0.904125896934116
+    ]
+  }
+}

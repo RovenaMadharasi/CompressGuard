@@ -1,0 +1,278 @@
+{
+  "summary": {
+    "total_videos": 400,
+    "pipeline_elapsed_seconds": 1390.5,
+    "workers_used": 4,
+    "variants_processed": [
+      "c23",
+      "c40",
+      "cascade"
+    ],
+    "crop_spec": {
+      "detector": "MTCNN",
+      "min_confidence": 0.85,
+      "margin_pct": 30,
+      "target_size": [
+        299,
+        299
+      ],
+      "box_reuse": "Detected on c23, identically applied to c40 and cascade"
+    }
+  },
+  "retention_by_split": {
+    "train": {
+      "real": {
+        "videos": 140,
+        "frames_before": 2240,
+        "frames_after": 2240,
+        "retention_pct": 100.0,
+        "avg_frames_per_video": 16.0
+      },
+      "fake": {
+        "videos": 140,
+        "frames_before": 2240,
+        "frames_after": 2239,
+        "retention_pct": 99.96,
+        "avg_frames_per_video": 15.99
+      }
+    },
+    "val": {
+      "real": {
+        "videos": 30,
+        "frames_before": 480,
+        "frames_after": 480,
+        "retention_pct": 100.0,
+        "avg_frames_per_video": 16.0
+      },
+      "fake": {
+        "videos": 30,
+        "frames_before": 480,
+        "frames_after": 479,
+        "retention_pct": 99.79,
+        "avg_frames_per_video": 15.97
+      }
+    },
+    "test": {
+      "real": {
+        "videos": 30,
+        "frames_before": 480,
+        "frames_after": 479,
+        "retention_pct": 99.79,
+        "avg_frames_per_video": 15.97
+      },
+      "fake": {
+        "videos": 30,
+        "frames_before": 480,
+        "frames_after": 480,
+        "retention_pct": 100.0,
+        "avg_frames_per_video": 16.0
+      }
+    }
+  },
+  "low_frame_videos": [],
+  "cross_split_leakage": {
+    "train_val_overlap": 0,
+    "train_test_overlap": 0,
+    "val_test_overlap": 0,
+    "status": "PASSED (Zero Leakage)"
+  },
+  "shortcut_check": {
+    "train": {
+      "face_box_side": {
+        "real_mean": 288.74,
+        "real_std": 182.61,
+        "fake_mean": 284.56,
+        "fake_std": 177.29,
+        "diff_pct": 1.45
+      },
+      "confidence": {
+        "real_mean": 0.9928,
+        "real_std": 0.0147,
+        "fake_mean": 0.9923,
+        "fake_std": 0.016,
+        "diff_pct": 0.05
+      },
+      "original_file_size_kb": {
+        "real_mean": 125.09,
+        "fake_mean": 124.32,
+        "diff_pct": 0.61
+      },
+      "crop_file_size_kb": {
+        "real_mean": 21.27,
+        "fake_mean": 20.72,
+        "diff_pct": 2.6
+      },
+      "resolutions": {
+        "real": {
+          "640x480": 736,
+          "854x480": 176,
+          "1280x720": 720,
+          "720x480": 48,
+          "654x480": 16,
+          "600x480": 160,
+          "1920x1080": 240,
+          "656x480": 112,
+          "642x480": 16,
+          "602x480": 16
+        },
+        "fake": {
+          "640x480": 736,
+          "854x480": 176,
+          "1280x720": 719,
+          "654x480": 16,
+          "720x480": 48,
+          "600x480": 160,
+          "1920x1080": 240,
+          "656x480": 112,
+          "642x480": 16,
+          "602x480": 16
+        }
+      },
+      "flagged_shortcuts": []
+    },
+    "val": {
+      "face_box_side": {
+        "real_mean": 263.21,
+        "real_std": 160.73,
+        "fake_mean": 261.02,
+        "fake_std": 160.31,
+        "diff_pct": 0.83
+      },
+      "confidence": {
+        "real_mean": 0.9908,
+        "real_std": 0.0172,
+        "fake_mean": 0.9907,
+        "fake_std": 0.0165,
+        "diff_pct": 0.01
+      },
+      "original_file_size_kb": {
+        "real_mean": 130.93,
+        "fake_mean": 130.15,
+        "diff_pct": 0.59
+      },
+      "crop_file_size_kb": {
+        "real_mean": 21.74,
+        "fake_mean": 21.24,
+        "diff_pct": 2.29
+      },
+      "resolutions": {
+        "real": {
+          "654x480": 32,
+          "1280x720": 176,
+          "854x480": 48,
+          "800x480": 16,
+          "720x480": 16,
+          "656x480": 96,
+          "640x480": 32,
+          "600x480": 32,
+          "1920x1080": 32
+        },
+        "fake": {
+          "654x480": 32,
+          "1280x720": 175,
+          "854x480": 48,
+          "800x480": 16,
+          "720x480": 16,
+          "656x480": 96,
+          "640x480": 32,
+          "600x480": 32,
+          "1920x1080": 32
+        }
+      },
+      "flagged_shortcuts": []
+    },
+    "test": {
+      "face_box_side": {
+        "real_mean": 233.87,
+        "real_std": 91.35,
+        "fake_mean": 230.78,
+        "fake_std": 89.81,
+        "diff_pct": 1.32
+      },
+      "confidence": {
+        "real_mean": 0.9905,
+        "real_std": 0.0163,
+        "fake_mean": 0.9928,
+        "fake_std": 0.011,
+        "diff_pct": 0.23
+      },
+      "original_file_size_kb": {
+        "real_mean": 142.46,
+        "fake_mean": 141.6,
+        "diff_pct": 0.6
+      },
+      "crop_file_size_kb": {
+        "real_mean": 21.84,
+        "fake_mean": 21.26,
+        "diff_pct": 2.68
+      },
+      "resolutions": {
+        "real": {
+          "640x480": 144,
+          "600x480": 64,
+          "1280x720": 160,
+          "854x480": 32,
+          "1920x1080": 48,
+          "656x480": 16,
+          "720x480": 15
+        },
+        "fake": {
+          "640x480": 144,
+          "600x480": 64,
+          "1280x720": 160,
+          "854x480": 32,
+          "1920x1080": 48,
+          "656x480": 16,
+          "720x480": 16
+        }
+      },
+      "flagged_shortcuts": []
+    }
+  },
+  "multiface_check": {
+    "train": {
+      "real": {
+        "multi_face_frames": 229,
+        "total_frames": 2240,
+        "pct": 10.22
+      },
+      "fake": {
+        "multi_face_frames": 213,
+        "total_frames": 2240,
+        "pct": 9.51
+      }
+    },
+    "val": {
+      "real": {
+        "multi_face_frames": 52,
+        "total_frames": 480,
+        "pct": 10.83
+      },
+      "fake": {
+        "multi_face_frames": 52,
+        "total_frames": 480,
+        "pct": 10.83
+      }
+    },
+    "test": {
+      "real": {
+        "multi_face_frames": 46,
+        "total_frames": 480,
+        "pct": 9.58
+      },
+      "fake": {
+        "multi_face_frames": 50,
+        "total_frames": 480,
+        "pct": 10.42
+      }
+    }
+  },
+  "output_artifacts": {
+    "face_crops_directory": "D:\\3rd_yr_sem5\\stirs_research\\DeepFake\\frames_faces",
+    "metadata_file": "D:\\3rd_yr_sem5\\stirs_research\\DeepFake\\outputs\\v2\\crop_metadata.json",
+    "crop_log": "D:\\3rd_yr_sem5\\stirs_research\\DeepFake\\outputs\\v2\\crop_log.txt",
+    "face_grid_test": "D:\\3rd_yr_sem5\\stirs_research\\DeepFake\\outputs\\v2\\face_grid_test.png",
+    "multiface_check_grid": "D:\\3rd_yr_sem5\\stirs_research\\DeepFake\\outputs\\v2\\multiface_check.png",
+    "report_json": "D:\\3rd_yr_sem5\\stirs_research\\DeepFake\\outputs\\v2\\crop_report.json"
+  }
+}
