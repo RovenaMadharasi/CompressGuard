@@ -10,3 +10,11 @@ outputs/v2/predict_tmp/
 *.log
 __pycache__/
 .venv/
+# Python environments and cache
+venv/
+.env
+.streamlit/secrets.toml
+*.pyc
+
+# Local temporary files
+outputs/v2/predict_tmp/
